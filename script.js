@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     "use strict";
-    testFun1();
+    testFunction();
 });
 
 const h1 = document.querySelector("h1");
 
-function testFun1() {
-    fetch("https://codingapple1.github.io/price.json")
+function testFunction() {
+    fetch("https://dayoon07.github.io/static_page_test/f/test.json")
         .then((res) => res.json())
         .then((data) => {
             console.log(data);
-            h1.innerHTML = "price : " + data.price;
+            h1.innerHTML = "작성자 : " + data.myName;
         })
         .catch((err) => {
             console.error(err);
