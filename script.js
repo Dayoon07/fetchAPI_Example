@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const h1 = document.querySelector("h1");
 
 function testFunction() {
-    fetch("https://dayoon07.github.io/static_page_test/f/test.json")
+    fetch("https://dayoon07.github.io/static-page-test/f/test.json")
         .then((res) => res.json())
         .then((data) => {
             console.log(data);
